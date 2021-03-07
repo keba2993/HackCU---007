@@ -40,7 +40,7 @@ int main()
 
     cout << "~~~~----~~~~//~~~~----~~~~" << endl
         << " Welcome to CASINO ROYALE" << endl 
-        << "~~~~----~~~~//~~~~----~~~~" << endl;
+        << "~~~~----~~~~//~~~~----~~~~" << endl << endl;
 
     cout << "How much money do you have? (whole #)" << endl;
     getline(cin, userIn);
