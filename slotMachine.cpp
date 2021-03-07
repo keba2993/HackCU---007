@@ -210,7 +210,6 @@ int generateRandom(int iteration, int pastRolls[])
             }
         }
     }
-    cout << randomNum;
     return randomNum;
 }
 
