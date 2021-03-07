@@ -39,7 +39,7 @@ int main()
     string userIn = "";
 
     cout << "~~~~----~~~~//~~~~----~~~~" << endl
-        << " Welcome to CASION ROYALE" << endl 
+        << " Welcome to CASINO ROYALE" << endl 
         << "~~~~----~~~~//~~~~----~~~~" << endl;
 
     cout << "How much money do you have? (whole #)" << endl;
