@@ -52,9 +52,9 @@ int main()
         getline(cin, userIn);
         amountIn = stoi(userIn);
 
-        if (amountIn < 10)
+        if (amountIn < 10 || amountIn > moneyCount)
         {
-            cerr << "NOT ENOUGH MONEY IN" << endl;
+            cerr << "INVALID MONEY IN" << endl;
         }
         else
         {
@@ -140,20 +140,23 @@ int main()
             updateMoney(moneyCount, amountWon);
             cout << "You now have $" << moneyCount << endl << endl;
 
-            cout << "Would you like to go again? (y/n)" << endl;
-            getline(cin, userIn);
+            if (moneyCount > 0)
+            {
+                cout << "Would you like to go again? (y/n)" << endl;
+                getline(cin, userIn);
 
-            if (userIn == "y" || userIn == "Y")
-            {
-                keepPlay = true;
-            }
-            else
-            {
-                keepPlay = false;
+                if (userIn == "y" || userIn == "Y")
+                {
+                    keepPlay = true;
+                }
+                else
+                {
+                    keepPlay = false;
+                }
             }
         }
 
-    } while (keepPlay);
+    } while (keepPlay && moneyCount > 0);
 
     return 0;
 }
